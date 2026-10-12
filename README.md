@@ -1,22 +1,37 @@
-# Python Assignment 3 — Loops and Functions
+# Python Fundamentals: Loops, Control Flow & Functions
 
-A beginner Python project demonstrating loop control, conditional logic, and user-defined functions through three small interactive programs.
+A beginner Python assignment demonstrating core programming concepts through three small, interactive programs.
 
-## Project Overview
+## Overview
 
-| Program | What it does | Python concepts |
-|---|---|---|
-| Number Guessing Game | Lets a user guess a randomly generated number from 1 to 10 | `while`, `if/elif/else`, `break`, `continue`, loop `else`, `random.randint()` |
-| Multiplication Table Generator | Prints a number's multiplication table from 1 to 10 | `for`, `range()`, arithmetic, user input |
-| BMI Calculator | Calculates BMI from weight in kilograms and height in meters | Functions, parameters, `return`, `float()`, formatted output |
+This repository contains practice exercises focused on writing clear Python code, accepting user input, applying control flow, and creating reusable functions.
+
+## Programs
+
+### 1. Number Guessing Game
+- Generates a random integer between 1 and 10.
+- Allows up to three valid guesses.
+- Gives feedback when a guess is too high, too low, correct, or outside the valid range.
+- Demonstrates a `while` loop, `if/elif/else`, `continue`, `break`, and `while ... else`.
+
+### 2. Multiplication Table Generator
+- Takes a number from the user.
+- Uses `for` and `range(1, 11)` to print its multiplication table from 1 to 10.
+
+### 3. BMI Calculator
+- Defines a reusable `calculate_bmi(weight, height)` function.
+- Calculates BMI with `weight / (height ** 2)`.
+- Accepts weight in kilograms and height in meters.
+- Formats the result to two decimal places.
 
 ## Skills Demonstrated
 
-- Writing readable, beginner-friendly Python code
-- Using loops and conditional statements to control program flow
-- Collecting and converting user input
-- Defining and calling a function with parameters and a return value
-- Formatting numeric output to two decimal places
+- Python loops: `while`, `for`, and `range()`
+- Conditional logic: `if`, `elif`, and `else`
+- Loop control: `break` and `continue`
+- Functions, parameters, and return values
+- User input and type conversion with `input()`, `int()`, and `float()`
+- Formatted output using f-strings
 
 ## Getting Started
 
@@ -24,50 +39,27 @@ A beginner Python project demonstrating loop control, conditional logic, and use
 - Python 3
 - Jupyter Notebook, JupyterLab, or Google Colab
 
-The project uses Python's built-in `random` module and does not require external packages.
-
 ### Run the notebook
 1. Open **[Python Assignment 3.ipynb](./Python%20Assignment%203.ipynb)**.
-2. Open it in Jupyter Notebook/JupyterLab, or upload it to Google Colab.
-3. Run the cells in order.
-4. Enter the values requested by each program.
+2. Run each code cell in order.
+3. Enter the values requested by each program.
 
 ## Example Results
 
-### Number Guessing Game
-The game gives feedback for guesses that are too high, too low, correct, or outside the 1–10 range. Invalid out-of-range guesses do not consume an attempt.
-
-### Multiplication Table
-For input `5`, the program prints the products from `5 x 1 = 5` through `5 x 10 = 50`.
-
-### BMI Calculator
-Example input:
-- Weight: `58` kg
-- Height: `1.62` m
-
-Expected output:
-```text
-Your BMI is: 22.10
-```
-
-## Learning Outcomes
-
-After completing this assignment, I practiced:
-- Choosing between `while` and `for` loops
-- Using `break` and `continue` to change loop execution
-- Applying a `while ... else` block
-- Creating a reusable function and returning a calculated result
+- **Multiplication table:** entering `5` prints the table from `5 x 1 = 5` through `5 x 10 = 50`.
+- **BMI calculator:** entering a weight of `58` kg and height of `1.62` m displays `Your BMI is: 22.10`.
+- **Number guessing game:** the game responds to each valid guess and ends when the number is guessed or the valid attempts run out.
 
 ## Repository Contents
 
-- `Python Assignment 3.ipynb` — notebook with all three programs.
-- `README.md` — project overview and run instructions.
+| File | Description |
+|---|---|
+| `Python Assignment 3.ipynb` | Notebook containing all three Python exercises |
 
-## Future Improvements
+## Learning Outcome
 
-- Add input validation for non-numeric guesses and invalid BMI measurements.
-- Add automated test cases for the BMI calculation and game logic.
+This assignment helped me practice Python fundamentals and build confidence with loops, conditional statements, and functions. It is a learning exercise and a foundation for more advanced Python and data-analysis projects.
 
 ---
 
-*Created as part of my Python learning journey.*
+*Part of my ongoing Python and data analytics learning journey.*
