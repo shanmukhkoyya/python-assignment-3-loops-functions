@@ -1,62 +1,55 @@
-# Python Fundamentals: Loops, Control Flow & Functions
+# Python Control Flow Arcade
 
-A beginner Python project demonstrating core programming concepts through three small interactive programs. This repository is a learning project and a foundation for more advanced Python and data-analysis work.
+Three small console exercises. Each one focuses on a different programming idea: repeat a process, generate a sequence, or wrap a calculation in a reusable function.
 
-## Programs
+## Choose an exercise
 
-### 1. Number Guessing Game
+### 01 — Number Guessing Game
+**Concepts:** random values, while loop, if/elif/else, continue, break and while-else.
+
 - Generates a random integer from 1 to 10.
 - Allows up to three valid guesses.
-- Gives feedback when a guess is too high, too low, correct, or outside the valid range.
-- Demonstrates `while`, `if/elif/else`, `continue`, `break`, and `while ... else`.
+- Gives feedback for correct, low, high or out-of-range guesses.
 
-### 2. Multiplication Table Generator
-- Accepts a number from the user.
-- Uses `for` and `range(1, 11)` to print its multiplication table from 1 to 10.
+### 02 — Multiplication Table Generator
+**Concepts:** for loop and range().
 
-### 3. BMI Calculator
-- Defines a reusable `calculate_bmi(weight, height)` function.
-- Calculates BMI with `weight / (height ** 2)`.
-- Accepts weight in kilograms and height in meters.
+- Accepts a number.
+- Prints its multiplication table from 1 through 10.
+
+### 03 — BMI Calculator
+**Concepts:** functions, parameters, return values and arithmetic.
+
+- Defines calculate_bmi(weight, height).
+- Uses weight in kilograms and height in metres.
 - Displays the result to two decimal places.
 
-## Skills Demonstrated
+## Try the examples
 
-- Python loops and conditional logic
-- `break`, `continue`, and `range()`
-- Functions, parameters, and return values
-- User input and type conversion
-- Arithmetic and formatted output
-- Basic manual test planning
+| Program | Example input | Example result |
+|---|---|---|
+| Multiplication table | 5 | Prints 5 × 1 = 5 through 5 × 10 = 50 |
+| BMI calculator | 58 kg, 1.62 m | BMI 22.10 |
+| Number guessing game | Random secret value | Feedback changes each run |
 
-## Getting Started
+The guessing-game secret is random, so its output is not expected to be identical between runs.
 
-**Requirements:** Python 3 and Jupyter Notebook, JupyterLab, or Google Colab. No third-party packages are required.
+## Open the notebook
 
-1. Open [Python Assignment 3.ipynb](./Python%20Assignment%203.ipynb).
-2. Run the notebook cells in order.
-3. Enter the values requested by each program.
+[Python Assignment 3.ipynb](./Python%20Assignment%203.ipynb)
 
-## Documentation
+## Project notes
 
-- [Project Documentation](./PROJECT_DOCUMENTATION.md) — program logic, learning objectives, manual test checklist, limitations, and possible future improvements.
+[Project Documentation](./PROJECT_DOCUMENTATION.md) includes program logic, learning objectives, a manual test checklist, limitations and possible next improvements.
 
-## Example Results
+## Run requirements
 
-- **Multiplication table:** entering `5` prints results from `5 x 1 = 5` through `5 x 10 = 50`.
-- **BMI calculator:** entering `58` kg and `1.62` m displays `Your BMI is: 22.10`.
-- **Number guessing game:** provides feedback for each guess; the secret number changes each run.
+Python 3 and Jupyter Notebook, JupyterLab or Google Colab. No third-party packages are required. Open the notebook and run the cells in order, entering the requested values.
 
-## Repository Contents
+## Learning outcome
 
-| File | Description |
-|---|---|
-| `Python Assignment 3.ipynb` | Notebook containing all three exercises |
-| `PROJECT_DOCUMENTATION.md` | Detailed project documentation and manual test checklist |
-
-## Learning Outcome
-
-This assignment helped me practice Python fundamentals and problem solving using loops, conditional statements, and functions. The project is intentionally beginner-level; input validation and automated tests are possible next improvements.
+This beginner assignment helped practise loops, control flow, functions, input conversion, arithmetic and formatted output. Input validation and automated tests are possible next improvements.
 
 ---
+
 *Part of my ongoing Python and data analytics learning journey.*
